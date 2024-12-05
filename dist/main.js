@@ -14,12 +14,11 @@ electron_1.app.on('ready', () => {
             nodeIntegration: true,
         }
     });
-    main_window.loadFile('index.html');
+    main_window.loadFile('./pages/main_page/index.html');
     main_window.on('closed', () => {
         electron_1.app.quit();
     });
     electron_1.ipcMain.on('message', (event, ...arg) => {
         console.log(...arg);
-        main_window.webContents.send('message', 'hello world');
     });
 });
