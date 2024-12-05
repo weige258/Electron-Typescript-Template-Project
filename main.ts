@@ -11,7 +11,7 @@ app.on('ready',()=>{
        }
     })
 
-    main_window.loadFile('index.html')
+    main_window.loadFile('./pages/main_page/index.html')
 
     main_window.on('closed',()=>{
         app.quit()

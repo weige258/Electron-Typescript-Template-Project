@@ -1,5 +1,4 @@
 import {contextBridge,ipcRenderer} from "electron";
-
 import fs from 'fs';
 
 contextBridge.exposeInMainWorld('ElectronAPI', {
