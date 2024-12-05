@@ -1,0 +1,29 @@
+{
+  "name": "learn-electron",
+  "version": "1.0.0",
+  "description": "学习electron",
+  "main": "./dist/main.js",
+  "scripts": {
+    "start": "tsc && electron-forge start",
+    "package": "tsc && electron-forge package",
+    "make": "tsc && electron-forge make"
+  },
+  "author": "wei",
+  "license": "MIT",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.6.0",
+    "@electron-forge/maker-deb": "^7.6.0",
+    "@electron-forge/maker-rpm": "^7.6.0",
+    "@electron-forge/maker-squirrel": "^7.6.0",
+    "@electron-forge/maker-zip": "^7.6.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.6.0",
+    "@electron-forge/plugin-fuses": "^7.6.0",
+    "@electron/fuses": "^1.8.0",
+    "@types/electron": "^1.4.38",
+    "electron": "^33.2.1",
+    "typescript": "^5.7.2"
+  },
+  "dependencies": {
+    "electron-squirrel-startup": "^1.0.1"
+  }
+}
